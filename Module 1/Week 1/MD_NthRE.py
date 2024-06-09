@@ -5,7 +5,7 @@ Input: y (giá trị của y), y_hat (gía trị của yˆ), n (căn bậc n), v
 Output: Kết quả của hàm loss
 '''
 
-def mean_difference_of_nth_root_error(y, y_hat, n, p):
+def MD_NthRE(y, y_hat, n, p):
     return (y**(1/n) - y_hat**(1/n))**p
 
 if __name__ == '__main__':

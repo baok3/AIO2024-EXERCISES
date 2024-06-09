@@ -24,7 +24,7 @@ def is_number(x):
     except ValueError:
         return 'x phải là số nguyên hoặc số thực'
 
-def exercise_2(x, activation_name):
+def activation_function(x, activation_name):
     if activation_name not in ['sigmoid', 'relu', 'elu']:
         print('chương trình không hỗ trợ hàm này')
         return
