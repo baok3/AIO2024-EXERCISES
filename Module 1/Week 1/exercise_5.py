@@ -1,16 +1,16 @@
-import math
+'''Viết function thực hiện Mean Difference of n^th Root Error:
 
-def calc_elu(x):
-    # Your code here
-    alpha = 0.01
-    if x <= 0:
-        return alpha * (math.exp(x) - 1)
-    else:
-        return x
+Input: y (giá trị của y), y_hat (gía trị của yˆ), n (căn bậc n), và p (bậc của hàm loss)
 
-    # End your code
+Output: Kết quả của hàm loss
+'''
 
-assert round ( calc_elu (1)) == 1
-print(round(calc_elu(-1),2))
+def mean_difference_of_nth_root_error(y, y_hat, n, p):
+    return (y**(1/n) - y_hat**(1/n))**p
 
-# x = -1 vì x <= 0 nên 0.01 * (e^-1 - 1) = 0.01 * (1/e - 1) = 0.01 * (1/2.718 - 1) = 0.01 * (0.367 - 1) = 0.01 * (-0.633) = -0.00633 = -0.01 (làm tròn 2 chữ số thập phân)
+if __name__ == '__main__':
+    y = float(input('Nhập y: '))
+    y_hat = float(input('Nhập y_hat: '))
+    n = int(input('Nhập n: '))
+    p = int(input('Nhập p: '))
+    print('Mean Difference of nth Root Error =', mean_difference_of_nth_root_error(y, y_hat, n, p))
