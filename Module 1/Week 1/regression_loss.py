@@ -14,7 +14,7 @@ Output: Print ra loss name, sample, predict, target, loss
 
 import random
 
-def exercise_3(num_samples, loss_name):
+def regression_loss(num_samples, loss_name):
     if not num_samples.isnumeric():
         print('num_samples phải là số nguyên')
         return
@@ -40,6 +40,6 @@ def exercise_3(num_samples, loss_name):
 if __name__ == '__main__':
     num_samples = int(input('Nhập num_samples: '))
     loss_name = input('Nhập loss_name: ')
-    exercise_3(num_samples, loss_name)
+    regression_loss(num_samples, loss_name)
 
 

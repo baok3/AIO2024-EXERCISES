@@ -9,7 +9,7 @@ check fn là float, print ’fn must be int’ và thoát hàm hoặc dừng ch�
 greater than zero’ và thoát hàm hoặc dừng chương trình.
 '''
 
-def exercise_1(tp, fp, fn):
+def classification_metric(tp, fp, fn):
     if type(tp) != int:
         print('tp phải là số nguyên')
         return
