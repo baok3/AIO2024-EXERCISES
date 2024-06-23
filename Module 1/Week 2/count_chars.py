@@ -7,6 +7,7 @@ Output: dictionary đếm số lần các chữ xuất hiện
 
 Note: Giả sử các từ nhập vào đều có các chữ cái thuộc [a-z] hoặc [A-Z]'''
 
+
 def count_chars(string):
     result = {}
 
