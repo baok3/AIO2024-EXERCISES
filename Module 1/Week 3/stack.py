@@ -17,6 +17,7 @@ Thực hiện xây dựng class Stack với các phương thức (method) sau đ
 
 '''
 
+
 class Stack:
     def __init__(self, capacity):
         self.capacity = capacity
@@ -38,13 +39,14 @@ class Stack:
         if self.is_full():
             return None
 
-        self.stack.append(value)    
+        self.stack.append(value)
 
     def top(self):
         if self.is_empty():
             return None
 
         return self.stack[-1]
+
 
 # Example
 stack1 = Stack(capacity=5)
@@ -64,3 +66,5 @@ print(stack1.top())
 print(stack1.pop())
 
 print(stack1.is_empty())
+
+print()
