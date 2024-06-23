@@ -66,5 +66,3 @@ print(stack1.top())
 print(stack1.pop())
 
 print(stack1.is_empty())
-
-print()
